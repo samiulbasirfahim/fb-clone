@@ -6,14 +6,14 @@ const NavbarStart = () => {
 	const [searchModalOpen, setSearchModalOpen] = useState(false)
 
 	return (
-		<div className={`flex px-4 ${searchModalOpen && 'h-[50vh]  absolute bg-white  shadow-xl rounded-lg '}`} >
+		<div className={`flex px-4 py-2  ${searchModalOpen && 'h-[50vh]  bg-white  shadow-xl rounded-lg '}`} >
 			{searchModalOpen ? (
-				<span className="w-[40px] h-[40px] flex items-center">
+				<span className="w-[40px] h-[40px] text-gray-600 flex items-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-6 w-6"
 						fill="none"
-						viewBox="0 0 24 24"
+						viewBox="0 0 28 24"
 						stroke="currentColor"
 						stroke-width="2"
 					>
@@ -37,7 +37,7 @@ const NavbarStart = () => {
 								xmlns="http://www.w3.org/2000/svg"
 								className="h-6 w-6"
 								fill="none"
-								viewBox="0 0 24 24"
+								viewBox="0 0 28 24"
 								stroke="currentColor"
 								strokeWidth={2}
 							>

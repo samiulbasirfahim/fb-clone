@@ -1,10 +1,12 @@
 import React from "react"
+import NavbarSecond from "../components/NavbarSecond"
 import NavbarStart from "../components/NavbarStart"
 
 const Navbar = () => {
 	return (
-		<header className="py-2 bg-white shadow-md fixed w-full top-0 h-[56px]">
+		<header className="bg-white shadow-md fixed w-full top-0 h-[56px] flex justify-between">
 			<NavbarStart />
+			<NavbarSecond />
 		</header>
 	)
 }
