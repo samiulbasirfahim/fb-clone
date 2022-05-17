@@ -2,7 +2,7 @@ import Navbar from "./shared/Navbar"
 
 const App = () => {
 	return (
-		<div>
+		<div className="bg-[#F0F2F5] min-h-screen">
 			<Navbar />
 		</div>
 	)

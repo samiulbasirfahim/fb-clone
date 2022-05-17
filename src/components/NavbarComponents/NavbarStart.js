@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import fbLogo from "../assets/Facebook-f_Logo-Blue-Logo.wine.png"
+import fbLogo from "../../assets/Facebook-f_Logo-Blue-Logo.wine.png"
 
 const NavbarStart = () => {
 	const [searchModalOpen, setSearchModalOpen] = useState(false)

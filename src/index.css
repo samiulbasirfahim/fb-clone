@@ -4,10 +4,10 @@
 
 @import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
 * {
-	font-family: "Helvetica Neue", sans-serif;
-  box-sizing: border-box;
+	font-family: "Helvetica 65 Medium", sans-serif;
+	box-sizing: border-box;
 }
 
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
