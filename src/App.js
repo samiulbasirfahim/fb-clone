@@ -1,7 +1,9 @@
+import Navbar from "./shared/Navbar"
+
 const App = () => {
 	return (
 		<div>
-			<p className="text-4xl">hello world</p>
+			<Navbar />
 		</div>
 	)
 }
