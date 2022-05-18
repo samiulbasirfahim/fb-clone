@@ -2,11 +2,16 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import fbLogo from "../../assets/Facebook-f_Logo-Blue-Logo.wine.png"
 
-const NavbarStart = () => {
+const NavbarStart = ({ setMenuFor }) => {
 	const [searchModalOpen, setSearchModalOpen] = useState(false)
 
 	return (
-		<div className={`flex px-4 py-2  ${searchModalOpen && 'h-[50vh]  bg-white  shadow-xl rounded-lg '}`} >
+		<div
+			onClick={() => setMenuFor(null)}
+			className={`flex px-4 py-2  ${
+				searchModalOpen && "h-[50vh]  bg-white  shadow-xl rounded-lg "
+			}`}
+		>
 			{searchModalOpen ? (
 				<span className="w-[40px] h-[40px] text-gray-600 flex items-center">
 					<svg

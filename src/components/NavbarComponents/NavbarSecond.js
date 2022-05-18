@@ -5,9 +5,9 @@ import { FaUserFriends } from "react-icons/fa"
 import { HiUserGroup } from "react-icons/hi"
 import { SiFacebookgaming } from "react-icons/si"
 
-const NavbarSecond = () => {
+const NavbarSecond = ({ setMenuFor}) => {
 	return (
-		<div>
+		<div onClick={() => setMenuFor(null)}>
 			<ul className="flex items-center ">
 				<NavLink
 					style={({ isActive }) => {
