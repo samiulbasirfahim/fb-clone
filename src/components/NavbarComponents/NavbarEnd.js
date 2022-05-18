@@ -5,6 +5,7 @@ import { BiMessageAlt } from "react-icons/bi"
 import { MdNotifications } from "react-icons/md"
 import { BsCaretDownFill } from "react-icons/bs"
 import Messages from "./NavbarEndMenu/Messages"
+import Notifications from "./NavbarEndMenu/Notifications"
 
 const NavbarEnd = ({ setMenuFor, menuFor }) => {
 	const toggleMenu = (menu) => {
@@ -71,6 +72,7 @@ const NavbarEnd = ({ setMenuFor, menuFor }) => {
 					className="h-[90vh] z-50 bg-white right-6 absolute w-[360px] rounded-md"
 				>
 					{menuFor === "message" && <Messages />}
+					{menuFor === "notifications" && <Notifications />}
 				</div>
 			)}
 		</div>
