@@ -10,13 +10,15 @@ const NavbarStart = ({ setMenuFor }) => {
 		<div
 			onClick={() => setMenuFor(null)}
 			className={`px-4 py-2  ${
-				searchModalOpen && "h-[50vh]  bg-white  shadow-xl rounded-lg "
+				searchModalOpen &&
+				"h-[50vh]  bg-white  shadow-xl rounded-lg overflow-scroll"
 			}`}
 		>
 			<div className="flex ">
 				{searchModalOpen ? (
 					<span className="w-[40px] h-[40px] text-gray-600 flex items-center">
 						<svg
+							onClick={() => setSearchModalOpen(false)}
 							xmlns="http://www.w3.org/2000/svg"
 							class="h-6 w-6"
 							fill="none"
@@ -41,10 +43,11 @@ const NavbarStart = ({ setMenuFor }) => {
 					</Link>
 				)}
 				<div>
-					<form className="relative flex items-center">
+					<form className="relative flex items-center h-[40px]">
 						{!searchModalOpen && (
-							<p className="absolute text-gray-400 left-3">
+							<p className="absolute text-gray-400 left-3  bg-[#f0f2f5]  h-[40px] w-[40px] flex items-center justify-center rounded-full 2xl:bg-transparent 2xl:h-auto 2xl:w-auto">
 								<svg
+									onClick={() => setSearchModalOpen(true)}
 									xmlns="http://www.w3.org/2000/svg"
 									className="h-6 w-6"
 									fill="none"
@@ -63,9 +66,11 @@ const NavbarStart = ({ setMenuFor }) => {
 						<input
 							type="text"
 							onFocus={() => setSearchModalOpen(true)}
-							onBlur={() => setSearchModalOpen(false)}
-							className={`bg-[#f0f2f5] h-[40px] w-[240px] rounded-full ml-2 pl-4 focus:outline-none ${
-								searchModalOpen ? "" : "pl-8"
+							// onBlur={() => setSearchModalOpen(false)}
+							className={`bg-[#f0f2f5] h-[40px]   w-[240px] rounded-full ml-2 pl-4 focus:outline-none ${
+								searchModalOpen
+									? "flex"
+									: "pl-8 2xl:block hidden"
 							}`}
 							placeholder="Search facebook"
 						/>
@@ -74,6 +79,9 @@ const NavbarStart = ({ setMenuFor }) => {
 			</div>
 			{searchModalOpen && (
 				<div>
+					<NavbarSearchResult />
+					<NavbarSearchResult />
+					<NavbarSearchResult />
 					<NavbarSearchResult />
 					<NavbarSearchResult />
 					<NavbarSearchResult />

@@ -27,7 +27,7 @@ const NavbarEnd = ({ setMenuFor, menuFor }) => {
 						alt=""
 						className="rounded-full h-[28px] w-[28px]"
 					/>
-					<span>Samiul ...</span>
+					<span className="hidden 2xl:block">Samiul ...</span>
 				</NavLink>
 				<li className="h-[40px] w-[40px] rounded-full flex items-center justify-center mx-2 bg-[#e4e6eb] hover:bg-[#D8DADF]">
 					<button

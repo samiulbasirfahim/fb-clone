@@ -8,7 +8,7 @@ import { SiFacebookgaming } from "react-icons/si"
 const NavbarSecond = ({ setMenuFor}) => {
 	return (
 		<div onClick={() => setMenuFor(null)}>
-			<ul className="flex items-center ">
+			<ul className="lg:flex items-center hidden">
 				<NavLink
 					style={({ isActive }) => {
 						return isActive
@@ -39,7 +39,7 @@ const NavbarSecond = ({ setMenuFor}) => {
 							: {}
 					}}
 					className={
-						"h-[56px] w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
+						"h-[56px] w-[80px] 2xl:w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
 					}
 					to="/add-friends"
 				>
@@ -57,7 +57,7 @@ const NavbarSecond = ({ setMenuFor}) => {
 							: {}
 					}}
 					className={
-						"h-[56px] w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
+						"h-[56px] w-[80px] 2xl:w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
 					}
 					to="/videos"
 				>
@@ -75,7 +75,7 @@ const NavbarSecond = ({ setMenuFor}) => {
 							: {}
 					}}
 					className={
-						"h-[56px] w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
+						"h-[56px] w-[80px] 2xl:w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
 					}
 					to="/groups"
 				>
@@ -93,7 +93,7 @@ const NavbarSecond = ({ setMenuFor}) => {
 							: {}
 					}}
 					className={
-						"h-[56px] w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
+						"h-[56px] w-[80px] 2xl:w-[130px] text-2xl flex items-center justify-center  hover:bg-gray-100/90 hover:rounded-2xl"
 					}
 					to="/games"
 				>
